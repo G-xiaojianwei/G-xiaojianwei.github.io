@@ -1,5 +1,5 @@
 {
     "name":"个人页面",
     "short_name":"个人",
-    "display":"standalone"
+    "display":"fullscreen"
 }
