@@ -2,7 +2,7 @@
     "name":"个人页面",
     "short_name":"个人",
     "display":"standalone",
-    "start_url":"",
+    "start_url":"https://g-xiaojianwei.github.io",
     "background_color": "#fff",
     "theme_color": "#328ce6",
     "icons": [
