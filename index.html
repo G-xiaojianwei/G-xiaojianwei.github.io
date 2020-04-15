@@ -45,7 +45,9 @@
 <script>
     $(function() {
         var h = $(window).height();
-        $("head").append("body{height:" + h + "px}.container{height:" + h + "px}</style>")
+        // $("head").append("body{height:" + h + "px}.container{height:" + h + "px}</style>")
+        $("body").css("height", h + "px");
+        $(".container").css("height", h + "px");
     })
 </script>
 
