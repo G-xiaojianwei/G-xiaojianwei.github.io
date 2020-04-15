@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,34 @@
     <link rel="stylesheet" href="https://g-xiaojianwei.github.io/css/style.css">
     <link rel="manifest" href="https://g-xiaojianwei.github.io/manifest.json">
     <link rel="preload" href="https://g-xiaojianwei.github.io/js/manifest.js" as="script">
+    <style>
+        .container {
+            width: 100%;
+        }
+    </style>
+    <script>
+        ! function(e) {
+            var t = e.document,
+                n = t.documentElement,
+                i = e.devicePixelRatio || 1,
+                a = "orientationchange" in e ? "orientationchange" : "resize",
+                d = function() {
+                    var e = n.getBoundingClientRect().width || 360;
+                    (1 == i || e > 750) && (e = 750), n.style.fontSize = e / 7.5 + "px"
+                };
+            n.setAttribute("data-dpr", i), t.addEventListener && (e.addEventListener(a, d, !1), "complete" === t.readyState || t.addEventListener("DOMContentLoaded", function() {
+                setTimeout(d)
+            }, !1))
+        }(window)
+    </script>
 </head>
+
 <body>
-    <p>
-        hello word
-    </p>
+    <div class="container">
+        <div class="c1">
+            itHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑.
+        </div>
+    </div>
 </body>
+
 </html>
