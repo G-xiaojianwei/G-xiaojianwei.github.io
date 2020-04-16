@@ -608,7 +608,7 @@ ul,li{
 }
 /* 动画添加 */
 
-.main-business .common-title,
+/* .main-business .common-title,
 .main-business .main-business-cont>p,
 .business-cont-item,
 .main-business-cont .main-more,
@@ -623,7 +623,7 @@ ul,li{
 .news-conter-item
 {
     opacity: 0;
-}
+} */
 
 
 .about-info{
@@ -1090,7 +1090,7 @@ ul,li{
             </div>
         </div>
         <!-- 主体内容 -->
-        <div class="index-banner animated bounceInLeft">
+        <div class="index-banner">
             <div class="swiper-container index-banner-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -1118,7 +1118,7 @@ ul,li{
             </script>
         </div>
         <!-- 关于公司 -->
-        <div class="about-company animated bounceInDown">
+        <div class="about-company ">
             <div class="common-title">
                 <h3>关于公司</h3>
                 <p>COMPANY PROFJLE</p>
@@ -1130,7 +1130,7 @@ ul,li{
         </div>
         <!-- 主营业务 -->
         <div class="main-business">
-            <div class="common-title animated">
+            <div class="common-title">
                 <h3>主营业务</h3>
                 <p>MAIN BUSINESS</p>
             </div>
@@ -1422,76 +1422,76 @@ $(function(){
     })
 })
 
-$(function() {
-    $(".container").scroll(function() {
-        //主营业务动画控制 
-        var mainH = $(".main-business").offset().top;
-        if (mainH <= 600) {
-            $(".main-business .common-title").addClass("fadeInLeft")
-            $(".main-business .common-title").css("opacity", 1)
-        }
-        if (mainH <= 400) {
-            $(".main-business .main-business-cont>p").addClass("fadeInLeft")
-            $(".main-business .main-business-cont>p").css("opacity", 1)
-        }
-        if (mainH <= 300) {
-            $(".business-cont-item").addClass("fadeInDown")
-            $(".business-cont-item").css("opacity", 1)
-        }
-        if (mainH <= 200) {
-            $(".main-more").addClass("bounce")
-            $(".main-more").css("opacity", 1)
-        }
+// $(function() {
+//     $(".container").scroll(function() {
+//         //主营业务动画控制 
+//         var mainH = $(".main-business").offset().top;
+//         if (mainH <= 600) {
+//             $(".main-business .common-title").addClass("fadeInLeft")
+//             $(".main-business .common-title").css("opacity", 1)
+//         }
+//         if (mainH <= 400) {
+//             $(".main-business .main-business-cont>p").addClass("fadeInLeft")
+//             $(".main-business .main-business-cont>p").css("opacity", 1)
+//         }
+//         if (mainH <= 300) {
+//             $(".business-cont-item").addClass("fadeInDown")
+//             $(".business-cont-item").css("opacity", 1)
+//         }
+//         if (mainH <= 200) {
+//             $(".main-more").addClass("bounce")
+//             $(".main-more").css("opacity", 1)
+//         }
 
-        // 项目案例动画控制
-        var projectH = $(".project-case").offset().top;
-        if (projectH <= 600) {
-            $(".project-case .common-title").addClass("bounceInUp")
-            $(".project-case .common-title").css("opacity", 1)
-        }
-        if (projectH <= 500) {
-            $(".project-case-cont .common-tag").addClass("bounceInRight")
-            $(".project-case-cont .common-tag").css("opacity", 1)
-        }
-        if (projectH <= 300) {
-            $(".project-case-item").addClass("rotateInDownLeft")
-            $(".project-case-item").css("opacity", 1)
-        }
-        // 合作伙伴动画控制
-        var partnersH = $(".partners").offset().top;
-        if (partnersH <= 600) {
-            $(".partners .common-title").addClass("fadeInDown")
-            $(".partners .common-title").css("opacity", 1)
-        }
-        $(".partners-cont li").each(function(i){
-            var liH=$(".partners-cont li").eq(i).offset().top;
-            if(liH<600){
-                $(".partners-cont li").eq(i).addClass("fadeInLeft");
-                $(".partners-cont li").eq(i).css("opacity",1);
-            }
-        })
+//         // 项目案例动画控制
+//         var projectH = $(".project-case").offset().top;
+//         if (projectH <= 600) {
+//             $(".project-case .common-title").addClass("bounceInUp")
+//             $(".project-case .common-title").css("opacity", 1)
+//         }
+//         if (projectH <= 500) {
+//             $(".project-case-cont .common-tag").addClass("bounceInRight")
+//             $(".project-case-cont .common-tag").css("opacity", 1)
+//         }
+//         if (projectH <= 300) {
+//             $(".project-case-item").addClass("rotateInDownLeft")
+//             $(".project-case-item").css("opacity", 1)
+//         }
+//         // 合作伙伴动画控制
+//         var partnersH = $(".partners").offset().top;
+//         if (partnersH <= 600) {
+//             $(".partners .common-title").addClass("fadeInDown")
+//             $(".partners .common-title").css("opacity", 1)
+//         }
+//         $(".partners-cont li").each(function(i){
+//             var liH=$(".partners-cont li").eq(i).offset().top;
+//             if(liH<600){
+//                 $(".partners-cont li").eq(i).addClass("fadeInLeft");
+//                 $(".partners-cont li").eq(i).css("opacity",1);
+//             }
+//         })
 
-        // 新闻中心动画控制
-        var newsH = $(".news-center").offset().top;
-        if (newsH <= 600) {
-            $(".news-center .common-title").addClass("lightSpeedIn")
-            $(".news-center .common-title").css("opacity", 1)
-        }
-        if (newsH <= 500) {
-            $(".news-center .common-tag").addClass("bounceInLeft")
-            $(".news-center .common-tag").css("opacity", 1)
-        }
-        if (newsH <= 300) {
-            $(".news-conter-item").addClass("rotateInDownRight")
-            $(".news-conter-item").css("opacity", 1)
-        }
-        var footerH = $(".footer").offset().top;
-        if (footerH <= 600) {
-            $(".footer").addClass("bounceInUp")
-            $(".footer").css("opacity", 1)
-        }
-    });
-})
+//         // 新闻中心动画控制
+//         var newsH = $(".news-center").offset().top;
+//         if (newsH <= 600) {
+//             $(".news-center .common-title").addClass("lightSpeedIn")
+//             $(".news-center .common-title").css("opacity", 1)
+//         }
+//         if (newsH <= 500) {
+//             $(".news-center .common-tag").addClass("bounceInLeft")
+//             $(".news-center .common-tag").css("opacity", 1)
+//         }
+//         if (newsH <= 300) {
+//             $(".news-conter-item").addClass("rotateInDownRight")
+//             $(".news-conter-item").css("opacity", 1)
+//         }
+//         var footerH = $(".footer").offset().top;
+//         if (footerH <= 600) {
+//             $(".footer").addClass("bounceInUp")
+//             $(".footer").css("opacity", 1)
+//         }
+//     });
+// })
 </script>
 </body>
 
