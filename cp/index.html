@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 70%;
+        }
+        
+        .ul {
+            width: 100%;
+            padding: 0;
+            left: 0;
+            top: 0;
+            margin: 0;
+            position: fixed;
+            background: #fff;
+        }
+        
+        li {
+            padding: 10px;
+            margin: 5px auto;
+            width: 90%;
+            list-style: none;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul">
+        <li>
+            纯美宜家
+        </li>
+        <li>
+            豪门国际照明
+        </li>
+        <li>
+            家斯特
+        </li>
+        <li>
+            康佳智能
+        </li>
+    </ul>
+    <ul class="a" style="padding-top: 200px;">
+
+    </ul>
+    <script>
+        $(".ul").children().click(function() {
+            $(".ul").children().css({
+                "background": "#ccc",
+                "color": "#000"
+            })
+            $(this).css({
+                "background": "red",
+                "color": "#fff"
+            })
+            switch ($(this).index()) {
+                case 0:
+                    $(".a").html("");
+                    for (var i = 1; i <= 95; i++) {
+                        $(".a").append("<h2>" + i + "</h2><img src=./cmyj/" + i + ".jpg />");
+                    }
+                    break;
+                case 1:
+                    $(".a").html("");
+                    for (var i = 1; i <= 80; i++) {
+                        $(".a").append("<h2>" + i + "</h2><img src=./hmgj/" + i + ".jpg />");
+                    }
+                    break;
+                case 2:
+                    $(".a").html("");
+                    for (var i = 1; i <= 147; i++) {
+                        $(".a").append("<h2>" + i + "</h2><img src=./jst/" + i + ".jpg />");
+                    }
+                    break;
+                case 3:
+                    $(".a").html("");
+                    for (var i = 1; i <= 54; i++) {
+                        $(".a").append("<h2>" + i + "</h2><img src=./kjzn/" + i + ".jpg />");
+                    }
+                    break;
+            }
+        })
+    </script>
+</body>
+
+</html>
