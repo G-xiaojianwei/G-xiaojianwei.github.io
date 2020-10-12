@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的-已登录状态</title>
-    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <title>圈子-王者荣耀</title>
     <script>
         var _htmlFontSize = (function () {
             var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
@@ -13,6 +12,7 @@
             return clientWidth * 1 / 16;
         })();
     </script>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
     <style>
         *{
             margin: 0;
@@ -27,58 +27,28 @@
             height: 100%;
             vertical-align: top;
         }
-        .model{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            padding: 0 1rem;
-            box-sizing: border-box;
-        }
         .model a{
             display: block;
             color: transparent;
         }
         .model a:nth-child(1){
-            width: 100%;
-            height: 2rem;
+            position: absolute;
+            left: 0.5rem;
+            top: 8.3rem;
+            font-size: .8rem;
+            width: 15rem;
+            height: 15rem;
             margin-top: 1rem;
         }
         .model a:nth-child(2){
-            width: 100%;
-            height: 1.5rem;
-            margin-top: 5rem;
-        }
-        .model a:nth-child(3){
-            width: 100%;
-            height: 1.5rem;
-            margin-bottom: .3rem;
-        }
-        .model a:nth-child(4){
-            width: 100%;
-            height: 1.5rem;
-            margin-bottom: .2rem;
-        }
-        .model a:nth-child(5){
-            width: 100%;
-            height: 1.5rem;
-            margin-bottom: .2rem;
-        }
-        .model a:nth-child(6){
-            width: 100%;
-            height: 1.5rem;
-            margin-bottom: .2rem;
-        }
-        .model a:nth-child(7){
-            width: 100%;
-            height: 1.5rem;
-            margin-bottom: .2rem;
-        }
-        .model a:nth-child(8){
-            width: 100%;
-            height: 1.5rem;
-            margin-top: 2.5rem;
+            position: absolute;
+            left: 0.5rem;
+            top: 4.3rem;
+            font-size: .8rem;
+            width: 2rem;
+            height: 1rem;
+            margin-top: 1rem;
+            /* background: red; */
         }
         .a{
             position: absolute;
@@ -104,23 +74,16 @@
 </head>
 <body>
     <div class="container">
-        <img src="img/我的-已登录状态.png" alt="">
+        <img src="img/圈子-王者荣耀.png" alt="">
         <div class="model">
-            <a href="个人信息.html">个人信息</a>
-            <a href="我的门票.html">我的门票</a>
-            <a href="购买门票.html">购买门票</a>
-            <a href="我的钱包.html">我的钱包</a>
-            <a href="我的角色.html">我的角色</a>
-            <a href="我的比赛.html">我的比赛</a>
-            <a href="我的任务.html">我的任务</a>
-            <a href="问题反馈.html">意见反馈</a>
+            <a href="圈子-王者荣耀-评论.html">评论</a>
+            <a href="圈子.html" class="a">圈子</a>
             <a href="index.html" class="a">我的</a>
             <a href="圈子.html" class="b">圈子</a>
             <a href="比赛.html" class="c">比赛</a>
             <a href="系统消息.html" class="d">消息</a>
         </div>
     </div>
-    
 </body>
 <script>
     $(".container").height($(window).height());
